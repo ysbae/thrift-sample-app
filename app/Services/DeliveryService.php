@@ -1,7 +1,11 @@
-<?php
+<?php namespace App\Services;
 
+use Mesh\Delivery\Courier;
 use Mesh\Delivery\Delivery;
 use Mesh\Delivery\DeliveryServiceIf;
+use Mesh\Delivery\DeliveryStatus;
+use Mesh\Delivery\Gender;
+use Mesh\Delivery\LatLng;
 use Mesh\Delivery\ServiceException;
 
 class DeliveryService implements DeliveryServiceIf
@@ -16,7 +20,7 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function submitDelivery($accessToken, Delivery $delivery)
     {
-        // TODO: Implement submitDelivery() method.
+        return $this->getDeliveryStub();
     }
 
     /**
@@ -28,7 +32,7 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function getDelivery($accessToken, $deliveryId)
     {
-        // TODO: Implement getDelivery() method.
+        return $this->getDeliveryStub();
     }
 
     /**
@@ -40,7 +44,7 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function listDeliveries($accessToken, $offset, $limit)
     {
-        // TODO: Implement listDeliveries() method.
+        return [$this->getDeliveryStub(), $this->getDeliveryStub(), $this->getDeliveryStub()];
     }
 
     /**
@@ -53,7 +57,7 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function assignCourier($accessToken, $deliveryId, $courierId)
     {
-        // TODO: Implement assignCourier() method.
+        return $this->getDeliveryStub();
     }
 
     /**
@@ -65,7 +69,7 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function cancelDelivery($accessToken, $deliveryId)
     {
-        // TODO: Implement cancelDelivery() method.
+        return $this->getDeliveryStub();
     }
 
     /**
@@ -77,6 +81,47 @@ class DeliveryService implements DeliveryServiceIf
      */
     public function completeDelivery($accessToken, $deliveryId)
     {
-        // TODO: Implement completeDelivery() method.
+        return $this->getDeliveryStub();
+    }
+
+    private function getDeliveryStub()
+    {
+        return new Delivery([
+            'id' => str_random(10),
+            'origin' => $this->getLatLngStub(),
+            'destination' => $this->getLatLngStub(),
+            'status' => DeliveryStatus::SUBMITTED,
+            'courier' => $this->getCourierStub(),
+            'createdAt' => 1454380000 + rand(0, 10000)
+        ]);
+    }
+
+    private function getCourierStub()
+    {
+        return new Courier([
+            'id' => rand(0, 10000),
+            'name' => '김수현',
+            'phone' => '01012341234',
+            'gender' => Gender::MALE
+        ]);
+    }
+
+    /**
+     * @return LatLng
+     */
+    private function getLatLngStub()
+    {
+        return new LatLng([
+            'lat' => 32.0 + $this->random(),
+            'lng' => 128.0 + $this->random()
+        ]);
+    }
+
+    /**
+     * @return float
+     */
+    private function random()
+    {
+        return mt_rand() / mt_getrandmax();
     }
 }
