@@ -1,0 +1,9 @@
+{
+  "name": "thrift-sample-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.6",
+    "thrift": "~0.9.3",
+    "thrift-sample": "https://github.com/ysbae/thrift-sample.git#0.0.6"
+  }
+}
