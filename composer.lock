@@ -4,9 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "2d6b98e1a2577a7cc05e0d82a521bf3a",
+    "content-hash": "104c1c7dca23c6ab701c123e8fb2ae0f",
     "packages": [
+        {
+            "name": "apache/thrift",
+            "version": "0.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://git-wip-us.apache.org/repos/asf/thrift.git",
+                "reference": "ef5bdf0a1d11e86dbaa377a61f6a2d492578408c"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Thrift": "lib/php/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Apache Thrift Developers",
+                    "email": "dev@thrift.apache.org",
+                    "homepage": "http://thrift.apache.org"
+                }
+            ],
+            "description": "Apache Thrift RPC system",
+            "homepage": "http://thrift.apache.org/",
+            "time": "2015-09-25 06:30:29"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -517,6 +554,54 @@
                 "storage"
             ],
             "time": "2015-12-19 20:16:43"
+        },
+        {
+            "name": "meshkorea/laravel-thrift",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/meshkorea/laravel-thrift.git",
+                "reference": "a995c190e04c7fc0660a8cec8e1b0a2f7f010b99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/meshkorea/laravel-thrift/zipball/a995c190e04c7fc0660a8cec8e1b0a2f7f010b99",
+                "reference": "a995c190e04c7fc0660a8cec8e1b0a2f7f010b99",
+                "shasum": ""
+            },
+            "require": {
+                "apache/thrift": "~0.9.3",
+                "illuminate/http": "5.*"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mesh\\Thrift\\": "src/Mesh/Thrift"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hyungsul Kim",
+                    "email": "hyungsul.kim@meshkorea.net",
+                    "homepage": "http://meshkorea.net"
+                }
+            ],
+            "description": "A composer package for using Thrift in Laravel",
+            "keywords": [
+                "laravel",
+                "thrift"
+            ],
+            "support": {
+                "source": "https://github.com/meshkorea/laravel-thrift/tree/v0.0.1",
+                "issues": "https://github.com/meshkorea/laravel-thrift/issues"
+            },
+            "time": "2016-02-01 15:46:45"
         },
         {
             "name": "monolog/monolog",
@@ -1775,6 +1860,44 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "ysbae/thrift-sample",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ysbae/thrift-sample.git",
+                "reference": "90d90db08cd162c28a94547b49e0e08afcf116f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ysbae/thrift-sample/zipball/90d90db08cd162c28a94547b49e0e08afcf116f4",
+                "reference": "90d90db08cd162c28a94547b49e0e08afcf116f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "dist-php/autoload.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Young Sub Bae",
+                    "email": "youngsub.bae@meshkorea.net",
+                    "homepage": "meshkorea.net"
+                }
+            ],
+            "description": "Thrift-generated package for Bootake internal API",
+            "homepage": "https://github.com/ysbae/thrift-sample",
+            "support": {
+                "source": "https://github.com/ysbae/thrift-sample/tree/v0.0.1",
+                "issues": "https://github.com/ysbae/thrift-sample/issues"
+            },
+            "time": "2016-02-02 04:33:51"
         }
     ],
     "packages-dev": [

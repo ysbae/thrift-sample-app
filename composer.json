@@ -6,7 +6,9 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "meshkorea/laravel-thrift": "~0.0.1",
+        "ysbae/thrift-sample": "~0.0.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -48,5 +50,15 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/meshkorea/laravel-thrift.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/ysbae/thrift-sample.git"
+        }
+    ]
 }
