@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2d6b98e1a2577a7cc05e0d82a521bf3a",
-    "content-hash": "104c1c7dca23c6ab701c123e8fb2ae0f",
+    "hash": "7947d81c70bcba2757774f78451b3979",
+    "content-hash": "e8f5258c76f1b5c1705ba8c9d9153424",
     "packages": [
         {
             "name": "apache/thrift",
@@ -1863,16 +1863,16 @@
         },
         {
             "name": "ysbae/thrift-sample",
-            "version": "0.0.1",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ysbae/thrift-sample.git",
-                "reference": "90d90db08cd162c28a94547b49e0e08afcf116f4"
+                "reference": "abae981103341b3202f739a43b30a28e0ca88543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ysbae/thrift-sample/zipball/90d90db08cd162c28a94547b49e0e08afcf116f4",
-                "reference": "90d90db08cd162c28a94547b49e0e08afcf116f4",
+                "url": "https://api.github.com/repos/ysbae/thrift-sample/zipball/abae981103341b3202f739a43b30a28e0ca88543",
+                "reference": "abae981103341b3202f739a43b30a28e0ca88543",
                 "shasum": ""
             },
             "require": {
@@ -1894,10 +1894,10 @@
             "description": "Thrift-generated package for Bootake internal API",
             "homepage": "https://github.com/ysbae/thrift-sample",
             "support": {
-                "source": "https://github.com/ysbae/thrift-sample/tree/v0.0.1",
+                "source": "https://github.com/ysbae/thrift-sample/tree/v0.0.6",
                 "issues": "https://github.com/ysbae/thrift-sample/issues"
             },
-            "time": "2016-02-02 04:33:51"
+            "time": "2016-02-02 07:48:35"
         }
     ],
     "packages-dev": [
